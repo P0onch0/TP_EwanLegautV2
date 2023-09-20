@@ -14,11 +14,18 @@ namespace TP_EwanLegautV2.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CredentielPage : ContentPage
     {
+        CredentielViewModel _viewModel;
         public CredentielPage()
         {
             InitializeComponent();
-            this.BindingContext = new CredentielViewModel();
+            BindingContext = _viewModel = new CredentielViewModel();
 
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            _viewModel.OnAppearing();
         }
     }
 }

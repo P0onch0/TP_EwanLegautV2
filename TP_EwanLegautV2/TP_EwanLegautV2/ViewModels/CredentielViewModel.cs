@@ -6,11 +6,12 @@ using TP_EwanLegautV2.Models;
 using TP_EwanLegautV2.Views;
 using Xamarin.Forms;
 
+
 namespace TP_EwanLegautV2.ViewModels
 {
     public class CredentielViewModel : BaseViewModel
     {
-        private Credentiel _selectedItem;
+        private Credentiel _selectedCredentiel;
 
         public ObservableCollection<Credentiel> OBScredentiels { get; }
         public Command LoadCredentielCommand { get; }
@@ -54,15 +55,15 @@ namespace TP_EwanLegautV2.ViewModels
         public void OnAppearing()
         {
             IsBusy = true;
-            SelectedItem = null;
+            SelectedCredentiel = null;
         }
 
-        public Credentiel SelectedItem
+        public Credentiel SelectedCredentiel
         {
-            get => _selectedItem;
+            get => _selectedCredentiel;
             set
             {
-                SetProperty(ref _selectedItem, value);
+                SetProperty(ref _selectedCredentiel, value);
                 OnCredentielSelected(value);
             }
         }
@@ -78,7 +79,9 @@ namespace TP_EwanLegautV2.ViewModels
                 return;
 
             // This will push the ItemDetailPage onto the navigation stack
-            await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={credentiel.Id}");
+           await Shell.Current.GoToAsync($"{nameof(CredentielDetailPage)}?{nameof(CredentielDetailViewModel.CredentielId)}={credentiel.Id}");
+          //  await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={item.Id}");
+            //await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
         }
     }
 }

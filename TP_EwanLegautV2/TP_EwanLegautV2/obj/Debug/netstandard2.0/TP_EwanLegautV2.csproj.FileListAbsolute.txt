@@ -19,3 +19,4 @@ C:\Users\SLAB90\Documents\TP Visual Studio\TP_EwanLegautV2\TP_EwanLegautV2\TP_Ew
 C:\Users\SLAB90\Documents\TP Visual Studio\TP_EwanLegautV2\TP_EwanLegautV2\TP_EwanLegautV2\obj\Debug\netstandard2.0\TP_EwanLegautV2.dll
 C:\Users\SLAB90\Documents\TP Visual Studio\TP_EwanLegautV2\TP_EwanLegautV2\TP_EwanLegautV2\obj\Debug\netstandard2.0\refint\TP_EwanLegautV2.dll
 C:\Users\SLAB90\Documents\TP Visual Studio\TP_EwanLegautV2\TP_EwanLegautV2\TP_EwanLegautV2\obj\Debug\netstandard2.0\TP_EwanLegautV2.pdb
+C:\Users\SLAB90\Documents\TP Visual Studio\TP_EwanLegautV2\TP_EwanLegautV2\TP_EwanLegautV2\obj\Debug\netstandard2.0\Views\CredentielDetailPage.xaml.g.cs
