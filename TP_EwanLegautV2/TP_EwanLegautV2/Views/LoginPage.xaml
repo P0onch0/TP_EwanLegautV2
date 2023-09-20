@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TP_EwanLegautV2.Views.LoginPage"
+             xmlns:vm="clr-namespace:TP_EwanLegautV2.ViewModels"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.BindingContext>
+        <vm:LoginViewModel />
+    </ContentPage.BindingContext>
+
+
+
+    <Grid>
+        <Image Source="Image.jpg" Aspect="AspectFill"/>
+
+        <!--<StackLayout Margin="10" VerticalOptions="Center" HorizontalOptions="Center">
+                <Label HorizontalOptions="Center" FontSize="30" FontAttributes="Bold" Text="Login"/>
+                <StackLayout Orientation="Horizontal">
+                    <Entry WidthRequest="180" Placeholder="Username" x:Name="TB_User" TextColor="White"  Text="{Binding User, Mode=TwoWay}"/>
+                    <Button WidthRequest="40" BackgroundColor="Transparent"/>
+                </StackLayout>
+
+                
+
+                <StackLayout Orientation="Horizontal">
+                    <Entry WidthRequest="180" Placeholder="Password" x:Name="TB_Password" Text="{Binding Password, Mode=TwoWay}" IsPassword="True"/>
+                    <Button WidthRequest="40" BackgroundColor="Transparent"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button BackgroundColor="Blue" Text="CONFIG"/>
+                    <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCmd}" BackgroundColor="Orange"/>
+                    <Label TextColor="Red" x:Name="messageErreur" Text="{Binding MessageErreur}"/>
+
+                </StackLayout>
+                <Button BackgroundColor="Transparent" TextColor="Blue" FontSize="10" Text="Mot de passe oublier ?"/>
+            </StackLayout>
+        -->
+
+       
+            
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                
+                <StackLayout Orientation="Vertical">
+                    <Entry Placeholder="Login" TextColor="Orange" PlaceholderColor="Orange" x:Name="TB_User" Text="{Binding User, Mode=TwoWay}"/>
+                <Entry Placeholder="Mot de passe" TextColor="Orange" PlaceholderColor="Orange" x:Name="TB_Password" IsPassword="True" Text="{Binding Password, Mode=TwoWay}"/>
+            </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCmd}" BackgroundColor="Orange" CornerRadius="50"/>
+                <Label TextColor="Red" x:Name="messageErreur" Text="{Binding MessageErreur}"/>
+                </StackLayout>
+            </StackLayout>
+        
+
+
+    </Grid>
+</ContentPage>
