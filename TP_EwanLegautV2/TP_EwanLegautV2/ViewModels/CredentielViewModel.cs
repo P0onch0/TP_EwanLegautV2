@@ -5,14 +5,14 @@ using System.Threading.Tasks;
 using TP_EwanLegautV2.Models;
 using TP_EwanLegautV2.Views;
 using Xamarin.Forms;
-
+using TP_EwanLegautV2.Services;
 
 namespace TP_EwanLegautV2.ViewModels
 {
     public class CredentielViewModel : BaseViewModel
     {
         private Credentiel _selectedCredentiel;
-
+        private dao_credentiel daoCredentiel;
         public ObservableCollection<Credentiel> OBScredentiels { get; }
         public Command LoadCredentielCommand { get; }
         public Command AddCredentielCommand { get; }
@@ -21,13 +21,35 @@ namespace TP_EwanLegautV2.ViewModels
         public CredentielViewModel()
         {
             Title = "Browse";
+            daoCredentiel = new dao_credentiel();
             OBScredentiels = new ObservableCollection<Credentiel>();
             LoadCredentielCommand = new Command(async () => await ExecuteLoadCredentielCommand());
 
             CredentielTapped = new Command<Credentiel>(OnCredentielSelected);
-
             AddCredentielCommand = new Command(OnAddCredentiel);
+
+
         }
+      
+
+        //public async void RefreshData()
+
+        //{
+        //    IsBusy = true;
+
+        //    OBScredentiels.Clear();
+
+        //    var credentials = await daoCredentiel.GetPasswordAsync();
+
+        //    foreach (var credential in credentials)
+
+        //    {
+
+        //        OBScredentiels.Add(credential);
+
+        //    }
+
+        //}
 
         async Task ExecuteLoadCredentielCommand()
         {
@@ -37,7 +59,9 @@ namespace TP_EwanLegautV2.ViewModels
             {
                 OBScredentiels.Clear();
                 var credentiel = await DataStoreCredentiel.GetCredentielAsync(true);
-                foreach (var cred in credentiel)
+
+                var credentials = await daoCredentiel.GetPasswordAsync();
+                foreach (var cred in credentials)
                 {
                     OBScredentiels.Add(cred);
                 }
@@ -79,7 +103,7 @@ namespace TP_EwanLegautV2.ViewModels
                 return;
 
             // This will push the ItemDetailPage onto the navigation stack
-           await Shell.Current.GoToAsync($"{nameof(CredentielDetailPage)}?{nameof(CredentielDetailViewModel.CredentielId)}={credentiel.Id}");
+           await Shell.Current.GoToAsync($"{nameof(CredentielDetailPage)}?{nameof(CredentielDetailViewModel.CredentielId)}={credentiel.id}");
           //  await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={item.Id}");
             //await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
         }

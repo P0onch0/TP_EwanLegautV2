@@ -46,7 +46,7 @@ namespace TP_EwanLegautV2.ViewModels
             try
             {
                 var credentiel = await DataStoreCredentiel.GetCredentielAsync(credentielId);
-                Id = credentiel.Id;
+                Id = credentiel.id.ToString();
                 Description = credentiel.Description;
             }
             catch (Exception)

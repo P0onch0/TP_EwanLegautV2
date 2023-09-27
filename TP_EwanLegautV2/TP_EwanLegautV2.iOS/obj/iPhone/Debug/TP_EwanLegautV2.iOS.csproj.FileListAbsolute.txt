@@ -1,5 +1,12 @@
 C:\Users\SLAB90\Documents\TP Visual Studio\TP_EwanLegautV2\TP_EwanLegautV2\TP_EwanLegautV2.iOS\bin\iPhone\Debug\TP_EwanLegautV2.iOS.exe
 C:\Users\SLAB90\Documents\TP Visual Studio\TP_EwanLegautV2\TP_EwanLegautV2\TP_EwanLegautV2.iOS\bin\iPhone\Debug\TP_EwanLegautV2.iOS.pdb
+C:\Users\SLAB90\Documents\TP Visual Studio\TP_EwanLegautV2\TP_EwanLegautV2\TP_EwanLegautV2.iOS\bin\iPhone\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\SLAB90\Documents\TP Visual Studio\TP_EwanLegautV2\TP_EwanLegautV2\TP_EwanLegautV2.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+C:\Users\SLAB90\Documents\TP Visual Studio\TP_EwanLegautV2\TP_EwanLegautV2\TP_EwanLegautV2.iOS\bin\iPhone\Debug\System.Buffers.dll
+C:\Users\SLAB90\Documents\TP Visual Studio\TP_EwanLegautV2\TP_EwanLegautV2\TP_EwanLegautV2.iOS\bin\iPhone\Debug\System.Memory.dll
+C:\Users\SLAB90\Documents\TP Visual Studio\TP_EwanLegautV2\TP_EwanLegautV2\TP_EwanLegautV2.iOS\bin\iPhone\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\SLAB90\Documents\TP Visual Studio\TP_EwanLegautV2\TP_EwanLegautV2\TP_EwanLegautV2.iOS\bin\iPhone\Debug\System.Text.Encodings.Web.dll
+C:\Users\SLAB90\Documents\TP Visual Studio\TP_EwanLegautV2\TP_EwanLegautV2\TP_EwanLegautV2.iOS\bin\iPhone\Debug\System.Text.Json.dll
 C:\Users\SLAB90\Documents\TP Visual Studio\TP_EwanLegautV2\TP_EwanLegautV2\TP_EwanLegautV2.iOS\bin\iPhone\Debug\Xamarin.Essentials.dll
 C:\Users\SLAB90\Documents\TP Visual Studio\TP_EwanLegautV2\TP_EwanLegautV2\TP_EwanLegautV2.iOS\bin\iPhone\Debug\Xamarin.Essentials.pdb
 C:\Users\SLAB90\Documents\TP Visual Studio\TP_EwanLegautV2\TP_EwanLegautV2\TP_EwanLegautV2.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll

@@ -6,7 +6,7 @@
     
         <StackLayout>
         <Label Text="Text:" FontSize="Medium" />
-        <Label Text="{Binding Name}" FontSize="Small"/>
+        <Label Text="{Binding Nom}" FontSize="Small"/>
         <Label Text="Description:" FontSize="Medium" />
         <Label Text="{Binding Description}" FontSize="Small"/>
     </StackLayout>

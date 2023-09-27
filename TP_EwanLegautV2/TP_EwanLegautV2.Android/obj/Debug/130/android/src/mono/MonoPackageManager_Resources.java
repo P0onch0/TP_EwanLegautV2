@@ -4,6 +4,10 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "TP_EwanLegautV2.Android.dll" comes first in this list. */
 		"TP_EwanLegautV2.Android.dll",
 		"FormsViewGroup.dll",
+		"Microsoft.Bcl.AsyncInterfaces.dll",
+		"Newtonsoft.Json.dll",
+		"System.Text.Encodings.Web.dll",
+		"System.Text.Json.dll",
 		"TP_EwanLegautV2.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",

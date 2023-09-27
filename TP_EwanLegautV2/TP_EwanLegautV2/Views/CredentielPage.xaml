@@ -4,13 +4,7 @@
              xmlns:local="clr-namespace:TP_EwanLegautV2.ViewModels"  
              xmlns:model="clr-namespace:TP_EwanLegautV2.Models"  
              x:Class="TP_EwanLegautV2.Views.CredentielPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    
 
      <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Command="{Binding AddCredentielCommand}" />
@@ -26,14 +20,14 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Padding="10" x:DataType="model:Credentiel">
-                        <Label Text="{Binding Name}" 
+                        <Label Text="{Binding Nom}" 
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
                         <Label Text="{Binding Description}" 
                             LineBreakMode="NoWrap"
                             Style="{DynamicResource ListItemDetailTextStyle}"
-                            FontSize="13" />
+                            FontSize="13" Background="Black" />
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer 
                                 NumberOfTapsRequired="1"
